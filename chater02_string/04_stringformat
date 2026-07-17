@@ -1,0 +1,22 @@
+#방법1 : %
+print("나는 %d살입니다." % 25)
+print("나는 %s을 좋아해요." % "파이썬")
+print("Happy 은 %c로 시작해요" % "H")
+# %s
+print("나는 %s살입니다" % 20)
+print("나는 %s색과 %s색을 좋아해요." % ("핑크", "하늘")) 
+
+#방법2 : format()
+print("나는 {}살입니다." .format(20))
+print("나는 {}색과 {}색을 좋아해요." .format ("핑크", "하늘"))
+print("나는 {0}색과 {1}색을 좋아해요." .format ("팡크", "하늘")) 
+print("나는 {1}색과 {0}색을 좋아해요." .format ("핑크", "하늘")) 
+
+#방법 3 : 이름지정
+print("나는 {age}살이며, {colour}색을 좋아해요." .format(age = 25, colour = "핑크"))
+print("나는 {age}살이며, {colour}색을 좋아해요." .format(colour = "핑크", age = 25))
+
+#방법 4 : f-string
+age = 25
+colour = "핑크"
+print(f"나는 {age}살이며, {colour}색을 좋아해요.")
